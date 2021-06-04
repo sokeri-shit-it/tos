@@ -4,17 +4,144 @@
 {% endblock %}
 
 {% block head %}
-	<div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-primary">
-		<img src="static/img/delivery.png" class="rounded float-right" alt="...">
-		<div class="col-md-5 p-lg-5 mx-right my-5 text-light">
-			<h1 class="display-4 fw-normal text-bold"><b> Математический планктон </b></h1><br>
-			<p class="lead fw-norma text-boldl">Слоган</p><br>
-			<a class="btn btn-outline-light" href="/about_us">Узнать больше
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-				<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-				<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-			</svg></a>
+<main>
+	<div class="position-relative overflow-hidden p-3 p-md-5 text-center my-background bg-primary">
+			<div class="p-lg-5 my-5 text-primary text-center bg-white rounded-3">
+				<h1 class="display-4 fw-normal text-bold"><b> Математический планктон </b></h1><br>
+				<p class="lead fw-norma text-bold">Наш слоган</p><br>
+				<a class="btn btn-outline-primary" href="/about_us">Узнать больше
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+					<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+				</svg></a>
+			</div>
+		<img src="static/img/crew.jpeg" class="rounded " alt="..." width="50%">
+	</div>
+{% endblock %}
+
+{% block container %}
+	<br>
+	<h1 class="text-bold text-center m-4">Список нашего отряда</h1><br>
+	<div class="accordion" id="accordionPanelsStayOpenExample">
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+			  <b>Лидер отряда - Бузунов Лев</b>
+			</button>
+		  </h2>
+		  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+			<div class="accordion-body">
+				<img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			</div>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+			  <b>Заместитель - Жогло Алексей</b>
+			</button>
+		  </h2>
+		  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			<div class="accordion-body">
+				<img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			</div>
+		  </div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Рудь Даниил
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Долгов Евгений
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Александров Олег
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Король Полина
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Костюк Данил
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Жогло Александр
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Терещук Никита
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Деспиллер Екатерина
+			  </button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			  <div class="accordion-body">
+				  <img src="static/img/crew.jpeg" class="rounded mx-auto d-block" alt="Бузунов Лев" width="50%">
+			  </div>
+			</div>
 		</div>
 	</div>
-
 {% endblock %}
