@@ -13,24 +13,29 @@ def index():
 def about():
     return render_template('about-us.html')
 
-@app.route('/galery')
+@app.route('/states')
 def galery():
-    return render_template('galery.html')
+    return render_template('states.html')
 
 
-@app.route('/weekend_1')
+@app.route('/weekend-1')
 def weekend_1():
     return render_template('weekend_1.html')
 
 
-@app.route('/weekend_2')
+@app.route('/weekend-2')
 def weekend_2():
     return render_template('weekend_2.html')
     
 
-@app.route('/weekend_3')
+@app.route('/weekend-3')
 def weekend_3():
     return render_template('weekend_3.html')
+
+
+@app.route('/weekend-end')
+def weekend_end():
+    return render_template('weekend_end.html')
 
 
 if __name__ == "__main__":
